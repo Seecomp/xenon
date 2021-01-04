@@ -33,7 +33,7 @@
     "TEMPLATE_FEATURED": {
       "description": "Webhook URL",
       "value": "Discord Webhook"
-    },
+    }
   },
   "buildpacks": [
     {
