@@ -1,0 +1,19 @@
+{
+  "name": "Xenon",
+  "description": "Xenon alternative",
+  "keywords": [
+    "xenon"
+  ],
+  "repository": "https://github.com/Seecomp/xenon",
+  "env": {
+    "API_URL": {
+      "description": "Same as DASHBOARD_URL, but with /api at the end.",
+      "value": "https://<heroku_app_name>/herokuapp.com/api"
+    },
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
