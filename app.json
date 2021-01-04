@@ -1,5 +1,5 @@
 {
-  "name": "Xenon",
+  "name": "ServerCloner",
   "description": "Xenon alternative",
   "keywords": [
     "xenon"
@@ -9,6 +9,30 @@
     "TOKEN": {
       "description": "Your bot token.",
       "value": "TOKEN"
+    },
+    "PREFIX": {
+      "description": "Your prefix (ex: !)",
+      "value": "sc."
+    },
+    "DB_HOST": {
+      "description": "MongoDB URL",
+      "value": "mongodb+srv://servercloner"
+    },
+    "REDIS_HOST": {
+      "description": "Redis URL",
+      "value": "redis url"
+    },
+    "TEMPLATE_LIST": {
+      "description": "Webhook URL",
+      "value": "Discord Webhook"
+    },
+    "TEMPLATE_APPROVAL": {
+      "description": "Webhook URL",
+      "value": "Discord Webhook"
+    },
+    "TEMPLATE_FEATURED": {
+      "description": "Webhook URL",
+      "value": "Discord Webhook"
     },
   },
   "buildpacks": [
