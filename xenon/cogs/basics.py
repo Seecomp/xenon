@@ -35,7 +35,7 @@ class Basics(cmd.Cog, name="\u200BOthers"):
         __Examples__
 
         ```{c.prefix}shard```
-        ```{c.prefix}shard 410488579140354049```
+        ```{c.prefix}shard 838488579140354049```
         """
         guild_id = guild_id or ctx.guild.id
         shard_id = (guild_id >> 22) % self.bot.shard_count
@@ -66,22 +66,20 @@ class Basics(cmd.Cog, name="\u200BOthers"):
 
     @cmd.command()
     async def invite(self, ctx):
-        """Invite Xenon"""
+        """Invite ServerCloner"""
         await ctx.send(**ctx.em(
             "**Invite Xenon**\n\n"
-            f"[Xenon]({ctx.bot.invite})\n"
-            "[Xenon Pro](https://discordapp.com/api/oauth2/authorize?client_id=524652984425250847&permissions=8&scope=bot) Use `x!pro` to get more information.\n"
-            "[Xenon Turbo](https://discordapp.com/api/oauth2/authorize?client_id=598534174894194719&permissions=8&scope=bot)",
+            f"[ServerCloner]({ctx.bot.invite})\n"
             type="info"
         ))
 
     @cmd.command(aliases=["i", "stats", "status", "about"])
     @cmd.cooldown(1, 10, cmd.BucketType.user)
     async def info(self, ctx):
-        """Get Information about Xenon"""
+        """Get Information about ServerCloner"""
         embed = ctx.em("")["embed"]
         embed.description = "Server Backups, Templates and more"
-        embed.title = "Xenon"
+        embed.title = "ServerCloner"
         embed.set_thumbnail(url=self.bot.user.avatar_url)
         embed.add_field(name="Invite", value=f"[Click Here]({ctx.bot.invite})")
         embed.add_field(name="Discord", value="[Click Here](https://discord.club/discord)")
@@ -99,17 +97,6 @@ class Basics(cmd.Cog, name="\u200BOthers"):
 
         await ctx.send(embed=embed)
 
-    @cmd.command(aliases=["pro", "turbo"])
-    async def tiers(self, ctx):
-        """Shows information about Xenon Pro & Turbo"""
-        await ctx.send(**ctx.em(
-            "**Xenon Pro** and **Xenon Turbo** are the **paid versions** of Xenon. "
-            "They extend the existing features of Xenon and add new ones.\n"
-            "You can buy them [here](https://www.patreon.com/merlinfuchs) "
-            "and find **more information** and a **detailed list of perks** "
-            "[here](https://docs.discord.club/xenon/tiers).",
-            type="info"
-        ))
 
     @cmd.Cog.listener()
     async def on_guild_join(self, guild):
@@ -121,13 +108,11 @@ class Basics(cmd.Cog, name="\u200BOthers"):
 
         try:
             await destination.send(**self.bot.em(
-                "__Thanks for adding Xenon to your server!__ 😃\n"
+                "__Thanks for adding ServerCloner to your server!__ 😃\n"
                 f"Use `{self.bot.config.prefix}help` to get a list of commands. If you need more information, "
-                "you can look at the [docs](https://docs.discord.club/xenon).\n"
-                "It's also recommended to join our [discord server](https://discord.club/discord) to get notified "
+                "It's also recommended to join our discord server to get notified "
                 "about future updates.\n\n"
-                "If you decide to use Xenon, **you and all your members need to accept our "
-                "[Terms of Service](https://docs.discord.club/xenon/terms-of-service)**!",
+                "If you decide to use ServerCloner, **you and all your members need to accept our "
                 type="info"
             ))
 
