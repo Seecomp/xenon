@@ -26,8 +26,8 @@ class Config:
     redis_host = "localhost"
 
     template_approval = 795800809886711860
-    template_list = 633228950998614037
-    template_featured = 633228948251082752
+    template_list = 795800607906070654
+    template_featured = 795800772377837578
 
     extensions = [
         "errors",
