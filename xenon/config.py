@@ -9,7 +9,7 @@ class Config:
     shard_count = 1
     per_cluster = 1
 
-    prefix = "sc."
+    prefix = "x!"
 
     dbl_token = None
 
