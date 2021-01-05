@@ -9,12 +9,12 @@ class Config:
     shard_count = 1
     per_cluster = 1
 
-    prefix = "x!"
+    prefix = "sc."
 
     dbl_token = None
 
-    support_guild = 410488579140354049
-    owner_id = 386861188891279362
+    support_guild = 795800607906070650
+    owner_id = 778428586192797696
     invite_url = None  # Set to None to generate one automatically
 
     identifier = "xenon"
@@ -25,7 +25,7 @@ class Config:
 
     redis_host = "localhost"
 
-    template_approval = 633228946875482112
+    template_approval = 795800809886711860
     template_list = 633228950998614037
     template_featured = 633228948251082752
 
