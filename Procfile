@@ -1,1 +1,1 @@
-web: python xenon/bot.py
+web: python xenon/launcher.py
